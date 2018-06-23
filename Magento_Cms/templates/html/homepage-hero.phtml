@@ -1,0 +1,5 @@
+<div class="homepage-hero">
+    <?php $i = 0; foreach ($block->getBlockList() as $key => $value): $i++; ?>
+        <div class="<?php echo $key; ?>"><?= $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId($value)->toHtml(); ?></div>
+    <?php endforeach; ?>
+</div>

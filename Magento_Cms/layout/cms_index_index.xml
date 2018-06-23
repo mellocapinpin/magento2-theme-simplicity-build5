@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content">
+            <block class="Magento\Framework\View\Element\Template" name="homepage.hero" template="Magento_Cms::html/homepage-hero.phtml">
+                <arguments>
+                    <argument name="block_list" xsi:type="array">
+                        <item name="item-1" xsi:type="string">build5-block1</item>
+                        <item name="item-2" xsi:type="string">build5-block2</item>
+                        <item name="item-3" xsi:type="string">build5-block3</item>
+                        <item name="item-4" xsi:type="string">build5-block4</item>
+                        <item name="item-5" xsi:type="string">build5-block5</item>
+                        <item name="item-6" xsi:type="string">build5-block6</item>
+                        <item name="item-7" xsi:type="string">build5-block7</item>
+                    </argument>
+                </arguments>
+            </block>
+            <block class="Magento\Framework\View\Element\Template" name="homepage.tabs" template="Magento_Cms::html/homepage-tabs.phtml">
+                <block class="Magento\Cms\Block\Block" name="homepage.tab1" as="tab1">
+                    <arguments>
+                        <argument name="block_id" xsi:type="string">build5-tab1</argument>
+                    </arguments>
+                </block>
+                <block class="Magento\Cms\Block\Block" name="homepage.tab2" as="tab2">
+                    <arguments>
+                        <argument name="block_id" xsi:type="string">build5-tab2</argument>
+                    </arguments>
+                </block>
+            </block>
+        </referenceContainer>
+    </body>
+</page>
